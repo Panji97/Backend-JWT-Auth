@@ -1,0 +1,28 @@
+GET http://localhost:5000/users
+Authorization: Berear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE4LCJuYW1lIjoiTG92ZSB5b3UgZnVsbCIsImVtYWlsIjoibWFkYW5nQG5kZXNldC5jb20iLCJpYXQiOjE2NDgzMzk5NDksImV4cCI6MTY0ODMzOTk2NH0.1wg-PpqmeImFAzqIaQjCK8euiRpYM9FxOrWW8NcHoBk
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name" :"Love you full",
+    "email" : "madang@ndeset.com",
+    "password" : "madanglah",
+    "confPassword" : "madanglah"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email":"madang@ndeset.com",
+    "password" : "madanglah"
+}
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
